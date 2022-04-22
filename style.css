@@ -238,6 +238,7 @@ section.projects {
     margin-top: 3vh;
     min-height: 180px;
     line-height: 0.8;
+    border: 1px solid white;
 }
 
 .projects-card:hover {
