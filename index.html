@@ -2,142 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
-  <body>
-      <section class="hero">
-        <div>
-          <h2 id="name">Kourelas Kostas</h2>
-          <p>Web - Mobile Developer &nbsp;•&nbsp; Designer</p>
-          <nav>
-              <ul>
-                  <li><a href="https://www.linkedin.com/in/kostas-kourelas-5b3528220/" target="_blank" class="fa fa-linkedin social"></a></li>
-                  <li><a href="#" class="fa fa-dribbble social"></a></li>
-                  <li><a href="https://github.com/KostasKourelas" target="_blank" class="fa fa-github social"></a></li>
-                  <li><a href="mailto:kourelaskostas.com" class="fa fa-envelope social"></a></li>
-              </ul>
-          </nav>
+<body>
+    <div class="overlay">
+        <p id="cntr" class="counter">0</p>
+        <div id="block-1" class="block"></div>
+        <span class="line"></span>
+        <div id="block-2" class="block"></div>
+    </div>
+    <div class="overlay2">
+        <span class="left animate-card" id="span1"><p>RIMEK</p></span>
+        <span class="left animate-card" id="span2"><p>PROODOS</p></span>
+        <span class="left animate-card" id="span3"><p>eBOOK READER</p></span>
+        <span class="right animate-card" id="span4"><p>SHOES DEALFINDER</p></span>
+        <span class="right animate-card" id="span5"><p>LAST-WAR-NEWS</p></span>
+        <span class="right animate-card" id="span6"><p>BEST-DEALS-SHOES</p></span>
+    </div>
+    <header>
+        <h2>SHOWCASE</h2>
+        <ul>
+            <span class="social-line"></span>
+            <li><a href="https://www.linkedin.com/in/kostas-kourelas/"><i class="fa fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/KostasKourelas"><i class="fa fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:kourelaskostas.com"><i class="fa fa-envelope social"></i></a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="card" id="card1">
+            <a href="https://rimek.gr/" target="_blank" rel="noopener noreferrer"></a>
+            <div class="card-header">
+                <p>Website</p>
+                <p>2023</p>
+            </div>
+            <h3>RIMEK RIMEK RIMEK RIMEK RIMEK</h3>
+            <div class="card-footer">
+                <p>Rimek</p>
+                <p>01</p>
+            </div>
         </div>
-        <a class="cv" href="Resume PDF.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Resume</a>
-
-
-        <a href="#goToProjects" class="goToProjects"> &#8595;</a>  
-      </section>
-      <section class="projects" id="goToProjects">
-        <h1 id="project-title">Projects</h1>
-        <div class="container-projects">
-            <a href="https://proodosf.gr/" target="_blank" class="projects-card hidden">
-                <img src="images\logo proodos 4 Light.png" alt="">
-                <div class="wrapper-proj">
-                  <h4><b>Website</b></h4> 
-                  <p>Web Development</p> 
-                  <p>Techical Support</p> 
-                </div>
-            </a>
-            <a href="https://rimek.gr/" target="_blank" class="projects-card hidden">
-                <img src="images\rimek-logo.png" alt="">
-                <div class="wrapper-proj">
-                  <h4><b>Website</b></h4> 
-                  <p>Web Development</p> 
-                  <p>Techical Support</p> 
-                </div>
-            </a>
-            <a href="https://horizonae.gr/" target="_blank" class="projects-card hidden">
-              <img src="images\horizon-logo.png" alt="">
-              <div class="wrapper-proj">
-                <h4><b>Website</b></h4> 
-                <p>Redesign</p> 
-              </div>
-            </a>
-          <div class="projects-card hidden">
-              <img src="images\react native project.png" alt="">
-              <div class="wrapper-proj">
-                <h4><b>Mobile Application</b></h4> 
-                <p>React Native</p> 
-                <p>Thesis</p> 
-              </div>
-          </div>
-          <div class="projects-card hidden">
-              <img id="coming" src="images\coming.png" alt="">
-              <div class="wrapper-proj">
-                <h4><b>Coming Soon</b></h4> 
-              </div>
+        <div class="card" id="card2">
+            <a href="https://proodosf.gr/" target="_blank" rel="noopener noreferrer"></a>
+            <div class="card-header">
+                <p>Website</p>
+                <p>2022</p>
+            </div>
+            <h3>PROODOS PROODOS PROODOS PROODOS</h3>
+            <div class="card-footer">
+                <p>Proodos</p>
+                <p>02</p>
+            </div>
         </div>
-  </section>
-
-      <!-- <section id="aboutSection" class="about">
-          <h1 class="hidden">About Me</h1>
-          <p class="aboutText hidden">Είμαι σχεδιαστής και προγραμματιστής Web και Mobile εφαρμοφών. Έχω εργαστεί πάνω
-            σε Web εφαρμογές με WordPress. Ασχολήθηκα με το Frontend χρησιμοποιώντας HTML,
-            CSS και JavaScript.</p>
-          <img class="avatar hidden" src="images\avatarprofile.png" alt="">
-          <a class="cv hidden" href="Resume PDF.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Resume</a>
-      </section> -->
-      <section class="skills ">
-          <div class="wrapper-skill">
-          <h1>Skills</h1>
-          </div>
-              <p>HTML, CSS</p>
-              <div class="skillbar-container">
-                <div class="skills html hidden">90%&nbsp;</div>
-              </div>
-              <p>JavaScript</p>
-              <div class="skillbar-container">
-                <div class="skills js hidden">60%&nbsp;</div>
-              </div>
-              <p>React Native</p>
-              <div class="skillbar-container">
-                <div class="skills native hidden">50%&nbsp;</div>
-              </div>
-              <p>VS Code, Git</p>
-              <div class="skillbar-container">
-                <div class="skills vs hidden">60%&nbsp;</div>
-              </div>
-              <p>Adobe Photoshop</p>
-              <div class="skillbar-container">
-                <div class="skills photoshop hidden">70%&nbsp;</div>
-              </div>
-              <p>Adobe Illustrator</p>
-              <div class="skillbar-container">
-                <div class="skills illustrator hidden">50%&nbsp;</div>
-              </div>
-              <p>SEO Optimization</p>
-              <div class="skillbar-container">
-                <div class="skills seo hidden">70%&nbsp;</div>
-              </div>
-      </section>
-      
-      <section class="experience hidden">
-        <h1>Experience<br>Education</h1>
-        <div class="container-exp">
-          <div class="wrapper-exp">
-            <p class="year">2017 - 2022</p>
-            <p class="title-exp">Τμήμα Μηχανικών Πληροφορικής Τ.Ε.</p>
-            <p>Πανεπιστήμιο Θεσσαλίας</p>
-          </div>
-          <div class="wrapper-exp">
-            <p class="year">2021</p>
-            <p class="title-exp">Vanilla Javascipt Online Course</p>
-            <p>Udemy.com</p>
-          </div>
-          <div class="wrapper-exp">
-            <p class="year">2022</p>
-            <p class="title-exp">The Complete React Native + Hooks Course</p>
-            <p>Udemy.com</p>
-          </div>
-          <div class="wrapper-exp">
-            <p class="year">2021 - 2022</p>
-            <p class="title-exp">Πρακτική άσκηση σε εταιρία πληροφορικής</p>
-            <p>Front-end Web Development</p>
-          </div>
+        <div class="card" id="card3">
+            <a href="https://github.com/KostasKourelas/eBooksReader" target="_blank" rel="noopener noreferrer"></a>
+            <div class="card-header">
+                <p>Mobile Application</p>
+                <p>2022</p>
+            </div>
+            <h3>eBOOKS READER eBOOKS READER eBOOKS READER eBOOKS READER</h3>
+            <div class="card-footer">
+                <p>eBook Reader</p>
+                <p>03</p>
+            </div>
         </div>
-      </section>
-      <a href="#" class="top"> &#8593;</a>  
-  </body>
+        <div class="card" id="card4">
+            <a href="https://github.com/KostasKourelas/BestDealsApp" target="_blank" rel="noopener noreferrer"></a>
+            <div class="card-header">
+                <p>Mobile Application</p>
+                <p>2023</p>
+            </div>
+            <h3>SHOES DEALFINDER SHOES DEALFINDER SHOES DEALFINDER SHOES DEALFINDER</h3>
+            <div class="card-footer">
+                <p>Shoes Dealfinder</p>
+                <p>04</p>
+            </div>
+        </div>
+        <div class="card" id="card5">
+            <a href="https://github.com/KostasKourelas/war-news-API" target="_blank" rel="noopener noreferrer"></a>
+            <div class="card-header">
+                <p>API</p>
+                <p>2023</p>
+            </div>
+            <h3>LAST-WAR-NEWS LAST-WAR-NEWS LAST-WAR-NEWS LAST-WAR-NEWS</h3>
+            <div class="card-footer">
+                <p>Last War News</p>
+                <p>05</p>
+            </div>
+        </div>
+        <div class="card" id="card6">
+            <a href="https://github.com/KostasKourelas/Deals-API" target="_blank" rel="noopener noreferrer"></a>
+            <div class="card-header">
+                <p>API</p>
+                <p>2023</p>
+            </div>
+            <h3>BEST-DEALS-SHOES BEST-DEALS-SHOES BEST-DEALS-SHOES BEST-DEALS-SHOES</h3>
+            <div class="card-footer">
+                <p>Best Deals Shoes</p>
+                <p>06</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
 </html>
