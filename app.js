@@ -1,3 +1,19 @@
+// Get the button element
+const buttons = document.querySelectorAll(".menu_link");
+
+// Add a click event listener to each button
+buttons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    // Deactivate all buttons with the "active" class
+    buttons.forEach(function(btn) {
+      btn.classList.remove("active");
+    });
+
+    // Activate the clicked button
+    button.classList.add("active");
+  });
+});
+
 function startLoader() {
 	let counterElement = document.getElementById("cntr");
 	let currentValue = 0;
@@ -52,54 +68,3 @@ gsap.to(".overlay", 1.5, {
 	display: "none"
 })
 
-// gsap.from("li", 2, {
-// 	delay: 4,
-// 	x: 700, 
-// 	stagger : {
-// 		amount: 0.5,
-// 	},
-// 	ease: "power4.inOut",
-// })
-
-gsap.from(".animate-card", 2, {
-	delay: 4,
-	y: 700, 
-	stagger : {
-		amount: 0.5,
-	},
-	ease: "Back.easeOut",
-})
-
-gsap.to(".left", 1, {
-	delay: 7,
-	x: -800, 
-	stagger : {
-		amount: 0.5,
-	},
-	ease: "power4.inOut",
-})
-
-gsap.to(".right", 1, {
-	delay: 7,
-	x: 800, 
-	stagger : {
-		amount: 0.5,
-	},
-	ease: "power4.inOut",
-})
-
-
-gsap.to(".overlay2", 3, {
-	delay: 5.2,
-	display: "none",
-	ease: "power4.inOut",
-})
-
-// gsap.from(".card", 4, {
-// 	delay: 7,
-// 	y: 700, 
-// 	stagger : {
-// 		amount: 0.5,
-// 	},
-// 	ease: "power4.inOut",
-// })
